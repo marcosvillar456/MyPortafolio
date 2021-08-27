@@ -291,103 +291,39 @@ section {
 
 .skills {
   color: #222;
-  .max-width {
-    text-align: -webkit-center;
-    .title::before {
+  text-align: -webkit-center;
+  .skill {
+    width: 110px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.8s;
       background: $color;
     }
-    .column-left {
-      width: calc(50% - 30px);
-      .text {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      p {
-        text-align: justify;
-      }
-      a {
-        display: inline-block;
-        background: crimson;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 8px 16px;
-        margin-top: 20px;
-        border-radius: 6px;
-        border: 2px solid crimson;
-        transition: all 0.3s ease;
-        &:hover {
-          color: crimson;
-          background: none;
-        }
-      }
+    i {
+      font-size: 30px;
     }
-    .column-right {
-      width: calc(70% - 30px);
-      .bars {
-        margin-bottom: 15px;
-      }
-      .info {
-        display: flex;
-        margin-bottom: 5px;
-        align-items: center;
-        justify-content: space-between;
-      }
-      span {
-        font-weight: 500;
-        font-size: 18px;
-      }
-      .line {
-        height: 25px;
-        width: 100%;
-        background: lightgrey;
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background: $color;
-        }
-      }
-    }
-
-    .Javascript {
-      &::before {
-        width: 100%;
-      }
-    }
-    .Typescript {
-      &::before {
-        width: 80%;
-      }
-    }
-    .React {
-      &::before {
-        width: 80%;
-      }
-    }
-    .NodeJS {
-      &::before {
-        width: 70%;
-      }
-    }
-    .API {
-      &::before {
-        width: 100%;
-      }
-    }
-    .Mysql {
-      &::before {
-        width: 60%;
-      }
-    }
-    .sass {
-      &::before {
-        width: 80%;
-      }
+  }
+  p {
+    text-align: justify;
+  }
+  a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    &:hover {
+      color: crimson;
+      background: none;
     }
   }
 }

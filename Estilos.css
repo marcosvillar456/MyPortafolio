@@ -277,25 +277,27 @@ section .title::after {
 
 .skills {
   color: #222;
-}
-.skills .max-width {
   text-align: -webkit-center;
 }
-.skills .max-width .title::before {
+.skills .skill {
+  width: 110px;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+}
+.skills .skill:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
   background: rgba(47, 189, 147, 0.88);
 }
-.skills .max-width .column-left {
-  width: calc(50% - 30px);
+.skills .skill i {
+  font-size: 30px;
 }
-.skills .max-width .column-left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.skills .max-width .column-left p {
+.skills p {
   text-align: justify;
 }
-.skills .max-width .column-left a {
+.skills a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -307,60 +309,9 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.skills .max-width .column-left a:hover {
+.skills a:hover {
   color: crimson;
   background: none;
-}
-.skills .max-width .column-right {
-  width: calc(70% - 30px);
-}
-.skills .max-width .column-right .bars {
-  margin-bottom: 15px;
-}
-.skills .max-width .column-right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills .max-width .column-right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-.skills .max-width .column-right .line {
-  height: 25px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-.skills .max-width .column-right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(47, 189, 147, 0.88);
-}
-.skills .max-width .Javascript::before {
-  width: 100%;
-}
-.skills .max-width .Typescript::before {
-  width: 80%;
-}
-.skills .max-width .React::before {
-  width: 80%;
-}
-.skills .max-width .NodeJS::before {
-  width: 70%;
-}
-.skills .max-width .API::before {
-  width: 100%;
-}
-.skills .max-width .Mysql::before {
-  width: 60%;
-}
-.skills .max-width .sass::before {
-  width: 80%;
 }
 
 .Proyects {
